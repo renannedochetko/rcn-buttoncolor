@@ -6,6 +6,8 @@ use Magento\Store\Model\ScopeInterface;
 
 class InjectCss extends Template
 {
+    private const XML_PATH_BUTTON_COLOR = 'rcn_button_color/button/color';
+
     /**
      * @var \Magento\Framework\App\Config\ScopeConfigInterface
      */
@@ -52,8 +54,8 @@ class InjectCss extends Template
     {
         $storeId = $this->_storeManager->getStore()->getId();
 
-        $color = $this->scopeConfig->getValue(
-            'rcn_button_color/button/color',
+       $color = $this->scopeConfig->getValue(
+            self::XML_PATH_BUTTON_COLOR,
             ScopeInterface::SCOPE_STORES,
             $storeId
         );
@@ -61,7 +63,7 @@ class InjectCss extends Template
         if ($color) {
             $color = ltrim($color, '#');
             if (preg_match('/^[a-fA-F0-9]{3,6}$/', $color)) {
-                return '<style>.action.primary, .action-primary, .action.button { background-color: #' . $color . ' !important; border-color: #' . $color . ' !important; }</style>';
+                return '<style>#html-body .action.primary, #html-body .action-primary, #html-body .action.button { background-color: #' . $color . '; border-color: #' . $color .'; }</style>';
             }
         }
 

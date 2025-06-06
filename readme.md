@@ -41,7 +41,7 @@ php bin/magento cache:flush
 
 ### 2. Instalação via Composer (GitHub)
 
-Se preferir, é possível instalar o módulo diretamente via Composer apontando para este repositório:
+É possível instalar o módulo diretamente via Composer apontando para este repositório:
 Adicione o repositório ao composer.json do seu projeto Magento:
 
 ```bash
