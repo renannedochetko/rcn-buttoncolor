@@ -4,7 +4,7 @@ Módulo Magento 2 para personalização da cor de botões via comando CLI, com s
 
 ## Objetivo
 
-Permitir que o cliente personalize a cor dos botões primários da loja diretamente pelo comando de CLI: bin/magento color:change <hex> <store_id>, ou via painel admin de forma independente para cada store view.
+Permitir que o cliente personalize a cor dos botões primários da loja diretamente pelo comando de CLI: bin/magento color:change "hex" "store_id", ou via painel admin de forma independente para cada store view.
 
 ---
 
