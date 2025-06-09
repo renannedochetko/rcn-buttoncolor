@@ -3,17 +3,23 @@
     "description": "Magento 2 module for button color customization per store view.",
     "type": "magento2-module",
     "version": "1.0.0",
-    "license": "proprietary",
+    "license": "OSL-3.0",
+    "keywords": ["magento2", "button", "color", "customization"],
+    "authors": [
+        {
+            "name": "Renan Carlos Nedochetko",
+            "email": "renan.nedo@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "~7.4||~8.1",
+        "magento/framework": "^103.0|^104.0"
+    },
     "autoload": {
-        "files": [
-            "registration.php"
-        ],
+        "files": ["registration.php"],
         "psr-4": {
             "RCN\\ButtonColor\\": ""
         }
     },
-    "require": {
-        "php": ">=7.4",
-        "magento/framework": "^103.0"
-    }
+    "prefer-stable": true
 }
