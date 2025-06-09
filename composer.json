@@ -2,7 +2,7 @@
     "name": "rcn/buttoncolor",
     "description": "Magento 2 module for button color customization per store view.",
     "type": "magento2-module",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "OSL-3.0",
     "keywords": ["magento2", "button", "color", "customization"],
     "authors": [
